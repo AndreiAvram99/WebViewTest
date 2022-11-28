@@ -6,13 +6,19 @@
   </head>
 
   <body>
-    <button id = "AR_Button"> <img id="AR_Icon" src="Phone.png" width="50px" height="50px"> </button>
+    <button id = "AR_Button" onclick="closeWebView()"> <img id="AR_Icon" src="Phone.png" width="50px" height="50px"> </button>
   </body>
 
   <script>
     function edit(){
       document.getElementById("AR_Icon").src="AR.png";
+      return;
     }
-  
+    
+    function closeWebView(){
+      window.location.href = "uniwebview://go-to-ar"; 
+      return;
+    }
+
   </script>
 </html>
